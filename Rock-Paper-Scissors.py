@@ -40,11 +40,12 @@ if mode == "1":
         print("You Won: You choose " + var1 + ", and the bot choose " + var2 + ".")
 
 if mode == "2":
-    print("The creator says Good luck, you'll need it.")
     
     if response == "1":
         print("You Lost: The creator choose paper and you choose rock. The creator says ez.")
-    if response == "2":
+    elif response == "2":
         print("You Lost: The creator choose scissors and you choose paper. The creator says ez.")
-    if response == "3":
+    elif response == "3":
         print("You Lost: The creator choose rock and you choose scissors. The creator says ez.")
+    else:
+        print("The creator won anyways (he says ez)")
