@@ -1,6 +1,6 @@
 import random
 
-with open('SOWPODS.txt', 'r') as f:
+with open('/workspaces/Python-Practice/Projects/SOWPODS.txt', 'r') as f:
   line = f.readline()
   while line:
     line = f.readline()
