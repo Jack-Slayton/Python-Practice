@@ -1,10 +1,6 @@
 word = "GATOLATOUS"
 var1 = len(word)
 
-a = ""
-for i in word:
-    if i not in a:
-        a += i
 
 livesleft = str("6")
 guess = str.capitalize(input("What is your first guess? "))
@@ -32,9 +28,8 @@ if spaced == spaces[0:var1]:
 else:
     print("Corect")
 print("You have " + livesleft + " lives left.")
-spaced1 = spaced
 
-lis = list(spaced1)
+lis = list(spaced)
 guess = str.capitalize(input("What is your guess? "))
 
 var2 = 0
@@ -50,8 +45,8 @@ for i in range(var1):
         var2 = var2 + 1
         var3 = var3 + 1
 
-print(spaced1)
-if spaced1 == spaced:
-    print("second layer")
+print(spaced)
+if spaced == spaced:
+   print("second layer")
 else:
     print("Corect")
