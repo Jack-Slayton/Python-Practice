@@ -25,7 +25,8 @@ if str.capitalize(oneg) in word:
 else:
   print("Wrong!")
   life = int(life) + 1
-  print(life)
+  lifeleft = 6 - int(life)
+  print("You have" + lifeleft + "lives remaining.")
 
 
 print(" ______")
