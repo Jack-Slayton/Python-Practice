@@ -29,7 +29,7 @@ else:
 print("You have " + livesleft + " lives left.")
 spaced1 = spaced
 
-lis = list(spaced)
+lis = list(spaced1)
 guess = str.capitalize(input("What is your guess? "))
 
 var2 = 0
@@ -45,7 +45,7 @@ for i in range(var1):
         var2 = var2 + 1
         var3 = var3 + 1
 
-print(spaced)
+print(spaced1)
 if spaced1 == spaced:
     print("second layer")
 else:
