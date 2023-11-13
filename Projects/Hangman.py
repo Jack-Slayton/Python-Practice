@@ -19,22 +19,29 @@ print("|      ")
 print( )
 #Set spaces and print
 spaces = "________________________________________"
-print(spaces[0:var1])
-
+spaced = spaces[0:var1]
+print(spaced)
+lis = list(spaced)
+print(lis)
 #First guess
 guess = str.capitalize(input("What is your first guess? "))
 
-if str.capitalize(guess) in word:
-  print("Correct!")
-  point = word.rfind(guess) + 1
-  print(point)
-else:
-  print("Wrong!")
-  life = int(life) + 1
-  lifeleft = 6 - int(life)
-  print("You have" + lifeleft + "lives remaining.")
+var2 = 0
+var3 = 1
+for x in word:
+    if guess in word[var2:var3]:
+        print(var3)
+        lis[var3] = guess
+        var2 = var2 + 1
+        var3 = var3 + 1
+    else:
+        var2 = var2 + 1
+        var3 = var3 + 1
 
-
+print(lis)
+spaced = "".join(lis)
+print(spaced)
+        
 print(" ______")
 print("/     |")
 print("|     |")
