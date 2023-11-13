@@ -1,6 +1,11 @@
 word = "GATOLATOUS"
 var1 = len(word)
 
+a = ""
+for i in word:
+    if i not in a:
+        a += i
+
 livesleft = str("6")
 guess = str.capitalize(input("What is your first guess? "))
 
