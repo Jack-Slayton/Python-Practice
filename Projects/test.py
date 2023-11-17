@@ -13,14 +13,14 @@
 number2 = 4
 number1 = 5
 Product = str(float(number2) + float(number1))
-dettype = Product
+
+dettype = Product[-1:]
 print(dettype)
-if ".0" in Product:
-    print("ok")
+dettype2 = Product[-2:-1]
+print(dettype2)
+dettype3 = dettype2 + dettype
+print(dettype3)
+if dettype3 == ".0":
+    print(Product[:-2])
 else:
-    print("NOT OK NOT OK")
-if str(Product[-1:]) == 0:
-    Product = int(Product + 1 - 1)
-else:
-    Product = Product
-print(Product)
+    print(Product)
